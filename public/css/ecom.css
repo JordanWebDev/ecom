@@ -1,0 +1,66 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: "Arial", Arial, sans-serif;
+  margin: 0%; }
+
+header {
+  width: 100%;
+  top: 0;
+  padding: 20px;
+  padding-top: 1px;
+  background: black;
+  height: 80px;
+  position: fixed;
+  z-index: 1; }
+
+#header-text {
+  color: white;
+  float: left;
+  padding-left: 2%;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer; }
+  #header-text:hover {
+    color: #e3342f; }
+
+#logopizza {
+  max-width: 100px;
+  max-height: 100px; }
+
+#webnav {
+  font-style: normal;
+  overflow: hidden;
+  left: 50%; }
+  #webnav ul {
+    margin: 0 auto;
+    font-size: 140%; }
+    #webnav ul li {
+      list-style-type: none;
+      padding: 20px;
+      float: right; }
+      #webnav ul li a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer; }
+        #webnav ul li a:hover {
+          color: #e3342f; }
+
+#mobileNav {
+  display: none; }
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  font-size: 15px;
+  border-top: 5px solid black; }
+
+@media only screen and (max-width: 760px) {
+  #header-text {
+    display: show;
+    font-size: 30px; }
+  #webnav {
+    display: none; }
+  #navbutton {
+    display: show; } }
