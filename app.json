@@ -1,0 +1,31 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-php"
+    }
+  ],
+  "description": "innotech final project",
+  "env": {
+    "APP_KEY": {
+      "required": true
+    },
+    "APP_URL": {
+      "required": true
+    },
+    "DB_CONNECTION": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "ecom",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
