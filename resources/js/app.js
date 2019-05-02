@@ -6,8 +6,6 @@
  */
 
 require('./bootstrap');
-require('../../../node_modules/jquery/dist/jquery.min')
-require('../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min')
 
 window.Vue = require('vue');
 

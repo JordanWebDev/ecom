@@ -1,15 +1,8 @@
-body{
-    background-color: white;
-    color: black;
-    font-family: "Arial", Arial, sans-serif;
-    margin: 0%;
-}
 header{
     width: 100%;
     top: 0;
     padding: 20px;
     padding-top: 1px;
-    background: black;
     height: 80px;
     position: fixed;
     z-index: 1;
@@ -25,10 +18,6 @@ header{
     &:hover{
         color: #e3342f;
     }
-}
-#logopizza{
-    max-width: 100px;
-    max-height: 100px;
 }
 #webnav {
     font-style: normal;
