@@ -17,15 +17,17 @@
         <main>
             <section>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt="First slide">
+                            <img class="d-block w-100" src="../images/winepromo.png" alt="First slide" height="600px">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide">
+                            <img class="d-block w-100" src="../images/iceyourbeer.png" alt="Second slide" height="600px">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
+                            <img class="d-block w-100" src="../images/liquorjpg.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
