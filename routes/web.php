@@ -11,11 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'LandingPageController@index')->name('landing-page');
 Route::get('/about', 'HomeController@about');
+
+Route::get('/shop', 'HomeController@products');
+
+Route::get('/product', 'HomeController@product');
+
+Route::get('/cart', 'HomeController@cart');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@home')->name('home');
+
+Route::get('/checkout', 'HomeController@checkout');
+
+Route::get('/thankyou', 'HomeController@thankyou');

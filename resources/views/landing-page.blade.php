@@ -23,31 +23,46 @@
                 </div>
             </section>
             <section>
-                
+
+                <div class="container">
+
+                    <h3 class="h3 text-center">shopping Demo-2 </h3>
+
+                    <div class="row">
+
+                        @foreach ($products as $product)
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product-grid2">
+
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="">
+                                        <img class="pic-2" src="">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
+                                    <span class="price">${{ $product->presentPrice() }}</span>
+                                </div>
+                                <br />
+                                <hr />
+                                <br />
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
             </section>
         </main>
-        <footer>
-            <div class="row">
-                <div class="col-md-4">
-                    &copy; Website name | 2019
-                </div>
-                <div class="col-md-4">
-                    Menu
-                </div>
-                <div class="col-md-4">
-                    About us
-                </div>
-                <div class="col-md-4">
-                    Contact us
-                </div>
-                <div class="col-md-4">
-                    Privacy Policy
-                </div>
-                <div class="col-md-4">
-                    Terms of Service
-                </div>
-            </div>
-        </footer>
+        @include('partials.footer')
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
