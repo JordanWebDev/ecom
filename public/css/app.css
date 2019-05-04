@@ -13728,8 +13728,8 @@ a.text-dark:focus {
   border-color: #6cb2eb;
 }
 
-.btn-outline-success:hover {
-  color: #6cb2eb;
+#search:hover {
+  background-color: #6cb2eb;
 }
 
 footer {
