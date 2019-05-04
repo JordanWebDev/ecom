@@ -14,7 +14,7 @@ class ProductsTableSeeder extends Seeder
         //BEER
         Product::create([
             'name' => 'Bud Light',
-            'image' => 'https://ibb.co/grJy0qY',
+            'image' => 'https://i.ibb.co/WHfnr8C/bud-light.jpg', //https://ibb.co/grJy0qY
             'details' => 'Region: Missouri - United States, ABV(alcoholByVolumne): 4.2% ',
             'price' => '509',
             'description' => 'Introduced in 1982, Bud Light is a premium light lager
@@ -29,7 +29,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Corona Extra',
-            'image' => 'https://ibb.co/0BmRmDM',
+            'image' => 'https://i.ibb.co/k35s5H8/coronaextra.jpg', //https://ibb.co/0BmRmDM
             'details' => 'Region: Mexico, ABV(alcoholByVolumne): 4.6%',
             'price' => '509',
             'description' => 'A staple at everything from summer beach parties to
@@ -47,7 +47,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Stella Artois',
-            'image' => 'https://ibb.co/BnNqbzd',
+            'image' => 'https://i.ibb.co/Hhdn6F1/stellabeer.jpg', //https://ibb.co/BnNqbzd
             'details' => 'Region: Belgium, ABV(alcoholByVolumne): 5%',
             'price' => '504',
             'description' => 'Enjoy the European way with the #1 best-selling Belgian beer
@@ -61,7 +61,7 @@ class ProductsTableSeeder extends Seeder
         //WINE
         Product::create([
             'name' => 'Apothic Red',
-            'image' => 'https://ibb.co/NNpd8tS',
+            'image' => 'https://i.ibb.co/6tb73rB/redwine.jpg', //https://ibb.co/NNpd8tS
             'details' => 'Region: California - United States, ABV(alcoholByVolumne): 13.5%',
             'price' => '1894',
             'description' => 'Defy convention. Apothic Red is a masterful blend of intense flavors
@@ -74,7 +74,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Barefoot Pinot Grigio',
-            'image' => 'https://ibb.co/QnScGtC',
+            'image' => 'https://i.ibb.co/7VMzFLR/whitewine.jpg', //https://ibb.co/QnScGtC
             'details' => 'Region: California - United States, ABV(alcoholByVolumne): 12.4%',
             'price' => '1300',
             'description' => 'Tart green apple flavors get down with a white peach undertone.
@@ -84,7 +84,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Veuve Clicquot Brut Yellow Label',
-            'image' => 'https://ibb.co/R3gDnd8',
+            'image' => 'https://i.ibb.co/St63TGS/champagne.jpg', //https://ibb.co/R3gDnd8
             'details' => 'Region: Champagne - France, ABV(alcoholByVolumne): 12%',
             'price' => '999',
             'description' => 'Veuve Clicquot Yellow Label Champagne is the signature champagne of the House.
@@ -109,7 +109,7 @@ class ProductsTableSeeder extends Seeder
         //LIQUOR
         Product::create([
             'name' => 'Bulleit Bourbon',
-            'image' => 'https://ibb.co/CbTsxQm',
+            'image' => 'https://i.ibb.co/y6bBLqd/bourbon.jpg', //https://ibb.co/CbTsxQm
             'details' => 'Region: Kentucky - United States, ABV(alcoholByVolumne): 45.6%',
             'price' => '1699',
             'description' => 'Bulleit Bourbon Whiskey allows you to savor the complex flavor and warm finish
@@ -128,7 +128,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Smirnoff No. 21 Vodka',
-            'image' => 'https://ibb.co/RzvPNnj',
+            'image' => 'https://i.ibb.co/jg6GzKJ/smirnoff.jpg', //https://ibb.co/RzvPNnj
             'details' => 'Region: United States, ABV(alcoholByVolumne): 40%',
             'price' => '1499',
             'description' => 'Whether you sip it on the rocks or with soda and a twist, Smirnoff No. 21 is the
@@ -147,7 +147,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Don Julio Blanco',
-            'image' => 'https://ibb.co/YpHT9fH',
+            'image' => 'https://i.ibb.co/cD4X524/tequila.jpg', //https://ibb.co/YpHT9fH
             'details' => 'Region: Mexico, ABV(alcoholByVolumne): 40%',
             'price' => '3299',
             'description' => 'Using the finest blue agave plant and a time honored distillation process,
@@ -158,7 +158,7 @@ class ProductsTableSeeder extends Seeder
         //SODA
         Product::create([
             'name' => 'Diet Coke',
-            'image' => 'https://ibb.co/QXS6n2Z',
+            'image' => 'https://i.ibb.co/52p5vNd/diet-coke.jpg', //https://ibb.co/QXS6n2Z
             'details' => 'Region: United States',
             'price' => '229',
             'description' => 'Diet Coke® is a delicious, crisp tasting, no calorie sparkling cola
@@ -169,7 +169,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Coca Cola',
-            'image' => 'https://ibb.co/zx5svbg',
+            'image' => 'https://i.ibb.co/c3vJnt9/cola.jpg', //https://ibb.co/zx5svbg
             'details' => 'Region: United States',
             'price' => '229',
             'description' => 'Bring home the refreshing taste of Coca-Cola. Serve ice cold for maximum refreshment.',
@@ -177,7 +177,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Canada Dry Ginger Ale',
-            'image' => 'https://ibb.co/JnFTv0d',
+            'image' => 'https://i.ibb.co/R24K3ZS/ginger-ale.jpg', //https://ibb.co/JnFTv0d
             'details' => 'Region: Canada',
             'price' => '229',
             'description' => 'Any time is a great time for the crisp goodness of Canada Dry Ginger Ale. Never skimping

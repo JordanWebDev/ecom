@@ -37,8 +37,8 @@
 
                                 <div class="product-image2">
                                     <a href="#">
-                                        <img class="pic-1" src="">
-                                        <img class="pic-2" src="">
+                                        <img class="pic-1" src="{{ $product->image }}">
+                                        <img class="pic-2" src="{{ $product->image }}">
                                     </a>
                                     <ul class="social">
                                         <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
