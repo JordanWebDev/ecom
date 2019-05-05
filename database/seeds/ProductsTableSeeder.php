@@ -14,6 +14,7 @@ class ProductsTableSeeder extends Seeder
         //BEER
         Product::create([
             'name' => 'Bud Light',
+            'slug' => 'bud-light',
             'image' => 'https://i.ibb.co/WHfnr8C/bud-light.jpg', //https://ibb.co/grJy0qY
             'details' => 'Region: Missouri - United States, ABV(alcoholByVolumne): 4.2% ',
             'price' => '509',
@@ -29,6 +30,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Corona Extra',
+            'slug' => 'corona-extra',
             'image' => 'https://i.ibb.co/k35s5H8/coronaextra.jpg', //https://ibb.co/0BmRmDM
             'details' => 'Region: Mexico, ABV(alcoholByVolumne): 4.6%',
             'price' => '509',
@@ -47,6 +49,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Stella Artois',
+            'slug' => 'stella-artois',
             'image' => 'https://i.ibb.co/Hhdn6F1/stellabeer.jpg', //https://ibb.co/BnNqbzd
             'details' => 'Region: Belgium, ABV(alcoholByVolumne): 5%',
             'price' => '504',
@@ -61,6 +64,7 @@ class ProductsTableSeeder extends Seeder
         //WINE
         Product::create([
             'name' => 'Apothic Red',
+            'slug' => 'apothic-red',
             'image' => 'https://i.ibb.co/6tb73rB/redwine.jpg', //https://ibb.co/NNpd8tS
             'details' => 'Region: California - United States, ABV(alcoholByVolumne): 13.5%',
             'price' => '1894',
@@ -74,6 +78,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Barefoot Pinot Grigio',
+            'slug' => 'barefoot-pinot',
             'image' => 'https://i.ibb.co/7VMzFLR/whitewine.jpg', //https://ibb.co/QnScGtC
             'details' => 'Region: California - United States, ABV(alcoholByVolumne): 12.4%',
             'price' => '1300',
@@ -84,6 +89,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Veuve Clicquot Brut Yellow Label',
+            'slug' => 'veuve-clicquot',
             'image' => 'https://i.ibb.co/St63TGS/champagne.jpg', //https://ibb.co/R3gDnd8
             'details' => 'Region: Champagne - France, ABV(alcoholByVolumne): 12%',
             'price' => '999',
@@ -109,6 +115,7 @@ class ProductsTableSeeder extends Seeder
         //LIQUOR
         Product::create([
             'name' => 'Bulleit Bourbon',
+            'slug' => 'bulleit-bourbon',
             'image' => 'https://i.ibb.co/y6bBLqd/bourbon.jpg', //https://ibb.co/CbTsxQm
             'details' => 'Region: Kentucky - United States, ABV(alcoholByVolumne): 45.6%',
             'price' => '1699',
@@ -128,6 +135,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Smirnoff No. 21 Vodka',
+            'slug' => 'smirnoff-vodka',
             'image' => 'https://i.ibb.co/jg6GzKJ/smirnoff.jpg', //https://ibb.co/RzvPNnj
             'details' => 'Region: United States, ABV(alcoholByVolumne): 40%',
             'price' => '1499',
@@ -147,6 +155,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Don Julio Blanco',
+            'slug' => 'julio-blanco',
             'image' => 'https://i.ibb.co/cD4X524/tequila.jpg', //https://ibb.co/YpHT9fH
             'details' => 'Region: Mexico, ABV(alcoholByVolumne): 40%',
             'price' => '3299',
@@ -158,6 +167,7 @@ class ProductsTableSeeder extends Seeder
         //SODA
         Product::create([
             'name' => 'Diet Coke',
+            'slug' => 'diet-coke',
             'image' => 'https://i.ibb.co/52p5vNd/diet-coke.jpg', //https://ibb.co/QXS6n2Z
             'details' => 'Region: United States',
             'price' => '229',
@@ -169,6 +179,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Coca Cola',
+            'slug' => 'coca-cola',
             'image' => 'https://i.ibb.co/c3vJnt9/cola.jpg', //https://ibb.co/zx5svbg
             'details' => 'Region: United States',
             'price' => '229',
@@ -177,6 +188,7 @@ class ProductsTableSeeder extends Seeder
 
         Product::create([
             'name' => 'Canada Dry Ginger Ale',
+            'slug' => 'canada-dry',
             'image' => 'https://i.ibb.co/R24K3ZS/ginger-ale.jpg', //https://ibb.co/JnFTv0d
             'details' => 'Region: Canada',
             'price' => '229',

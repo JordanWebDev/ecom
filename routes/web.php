@@ -12,19 +12,20 @@
 */
 
 Route::get('/', 'LandingPageController@index')->name('landing-page');
-Route::get('/about', 'HomeController@about');
 
-Route::get('/shop', 'HomeController@products');
+Route::get('/shop', 'ShopController@index')->name('shop.index');
+Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 
-Route::get('/product', 'HomeController@product');
+Route::get('/product', 'ShopController@product');
 
-Route::get('/cart', 'HomeController@cart');
+Route::view('/cart', 'cart');
 
+Route::view('/about', 'HomeController@about');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@home')->name('home');
 
-Route::get('/checkout', 'HomeController@checkout');
+Route::view('/checkout', 'HomeController@checkout');
 
-Route::get('/thankyou', 'HomeController@thankyou');
+Route::view('/thankyou', 'HomeController@thankyou');
