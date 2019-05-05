@@ -16,50 +16,48 @@
                 </button>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             BEER
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">BudLight</a>
-                            <a class="dropdown-item" href="#">Corona</a>
+                            <a class="dropdown-item" href="/shop/bud-light">BudLight</a>
+                            <a class="dropdown-item" href="/shop/corona-extra">Corona</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Stella Artios</a>
+                            <a class="dropdown-item" href="/shop/stella-artios">Stella Artios</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             WINE
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Red Wine</a>
-                            <a class="dropdown-item" href="#">White Wine</a>
+                            <a class="dropdown-item" href="/shop/apothic-red">Red Wine</a>
+                            <a class="dropdown-item" href="/shop/barefoot-pinot">White Wine</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Champagne</a>
+                            <a class="dropdown-item" href="/shop/veuve-clicquot">Champagne</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             LIQOUR
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Smirnoff</a>
-                            <a class="dropdown-item" href="#">Tequila</a>
+                            <a class="dropdown-item" href="/shop/smirnoff-vodka">Smirnoff</a>
+                            <a class="dropdown-item" href="/shop/julio-blanco">Tequila</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Bourbon</a>
+                            <a class="dropdown-item" href="/shop/bulleit-bourbon">Bourbon</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             EXTRAS
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            EXPLORE
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop">SHOP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about">CORPORATE</a>
+                        <a class="nav-link" href="/about">CORPORATE</a>
                     </li>
                 </ul>
 

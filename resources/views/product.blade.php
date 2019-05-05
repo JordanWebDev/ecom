@@ -1,5 +1,23 @@
 @extends('layouts.layout')
 
+@section('title', $product->name)
+
+@section('breadcrumb')
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/shop">Shop</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $product->id }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+@endsection
+
 @section('content')
 
     <section class="jumbotron text-center">
@@ -7,7 +25,7 @@
         <h1 class="jumbotron-heading">{{ $product->name }}</h1>
     </div>
 </section>
-@include('partials.breadcrumb')
+
 <div class="container">
     <div class="row">
         <!-- Image -->

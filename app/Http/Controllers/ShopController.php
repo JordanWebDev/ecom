@@ -33,9 +33,24 @@ class ShopController extends Controller
         return view('product')->with('product', $product);
     }
 
-    public function product()
+    public function beer()
     {
-        return view('product');
+        return view('beer');
+    }
+
+    public function wine()
+    {
+        return view('wine');
+    }
+
+    public function liquor()
+    {
+        return view('liquor');
+    }
+
+    public function extras()
+    {
+        return view('extras');
     }
 
 }

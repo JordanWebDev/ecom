@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.beer')
 
-@section('title', 'Shop - Come View Our Best Selections of Alcohol Around Town!')
+@section('title', 'Category-Beer the best beer around tastes fantastic!')
 
 @section('breadcrumb')
     <div class="container">
@@ -9,15 +9,16 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active"><a href="/shop">Shop</a></li>
+                        <li class="breadcrumb-item"><a href="/shop">Shop</a></li>
+                        <li class="breadcrumb-item active"><a href="/shop/beer">Beer</a></li>
                     </ol>
                 </nav>
             </div>
         </div>
     </div>
 @endsection
-@section('content')
 
+@section('content')
     <div class="container">
         <br />
         <h3 class="h3 text-center">Ecommerce Store</h3>
@@ -31,5 +32,4 @@
             @include('partials.allproducts')
         </div>
     </div>
-
 @endsection
