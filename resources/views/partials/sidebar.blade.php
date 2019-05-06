@@ -6,18 +6,11 @@
     </div>
     <div class="card-body">
         <ul class="nav flex-column category-menu">
-            <li class="list-group-item">
-                <a href="#"><h5>Beer</h5></a>
-            </li>
-            <li class="list-group-item">
-                <a href="#"><h5>Wine</h5></a>
-            </li>
-            <li class="list-group-item">
-                <a href="#"><h5>Liquor</h5></a>
-            </li>
-            <li class="list-group-item">
-                <a href="#"><h5>Extras</h5></a>
-            </li>
+            @foreach ($categories as $category)
+                <li class="list-group-item {{ request()->category == $category->slug ? 'active' : ''}} ">
+                    <a href="{{ route('shop.index', ['category' => $category->slug ])}}"><h5>{{ $category->name }}</h5></a>
+                </li>
+            @endforeach
         </ul>
     </div>
 </div>

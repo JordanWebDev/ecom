@@ -12,6 +12,11 @@
     color: #6cb2eb;
     border-color: #6cb2eb;
 }
+button.navbar-toggler{
+    background-color: lightgrey;
+
+    &:hover{ background-color: red;}
+}
 #search{
     &:hover{
         background-color: #6cb2eb;

@@ -9,7 +9,24 @@
     content: " / ";
     color: #cccccc;
 }
+.products-header{
+    display: flex;
+    justify-content: space-between;
 
+    h3.h3{
+        padding-left: 300px;
+        font-weight: 500;
+    }
+}
+.sidebar-menu li.active{
+    font-weight: 500;
+}
+.sidebar-menu a h5{
+    color: black;
+}
+.pagination{
+    padding-left: 50%;
+}
 @media(max-width:991px){
     .breadcrumb{
         padding: 8px 0px;

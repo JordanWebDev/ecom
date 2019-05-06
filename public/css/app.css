@@ -13732,6 +13732,14 @@ a.text-dark:focus {
   border-color: #6cb2eb;
 }
 
+button.navbar-toggler {
+  background-color: lightgrey;
+}
+
+button.navbar-toggler:hover {
+  background-color: red;
+}
+
 #search:hover {
   background-color: #6cb2eb;
 }
@@ -13743,8 +13751,6 @@ footer {
   font-size: 15px;
   border-top: 5px solid black;
 }
-
-/********************* Shopping Demo-2 **********************/
 
 .demo {
   padding: 45px 0;
@@ -13953,6 +13959,28 @@ footer {
 .breadcrumb li + li:before {
   content: " / ";
   color: #cccccc;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-header h3.h3 {
+  padding-left: 300px;
+  font-weight: 500;
+}
+
+.sidebar-menu li.active {
+  font-weight: 500;
+}
+
+.sidebar-menu a h5 {
+  color: black;
+}
+
+.pagination {
+  padding-left: 50%;
 }
 
 @media (max-width: 991px) {
