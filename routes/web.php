@@ -24,7 +24,7 @@ Route::get('empty', function(){
     Cart::destroy();
 });
 
-Route::view('/about', 'HomeController@about');
+Route::get('/about', 'PagesController@index')->name('about.index');
 
 Auth::routes();
 
