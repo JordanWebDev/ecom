@@ -15,43 +15,17 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            BEER
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/shop/bud-light">BudLight</a>
-                            <a class="dropdown-item" href="/shop/corona-extra">Corona</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/shop/stella-artios">Stella Artios</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop?category=beer">BEER</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            WINE
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/shop/apothic-red">Red Wine</a>
-                            <a class="dropdown-item" href="/shop/barefoot-pinot">White Wine</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/shop/veuve-clicquot">Champagne</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop?category=wine">WINE</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            LIQOUR
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/shop/smirnoff-vodka">Smirnoff</a>
-                            <a class="dropdown-item" href="/shop/julio-blanco">Tequila</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/shop/bulleit-bourbon">Bourbon</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop?category=liquor">LIQUOR</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            EXTRAS
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop?category=extras">EXTRAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/shop">SHOP</a>
@@ -63,7 +37,6 @@
 
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
 
                 <!-- Right Side Of Navbar -->
@@ -97,7 +70,13 @@
                             </div>
                         </li>
                     @endguest
-                    <img id="logo-nav" src="../images/cart.png" alt="cart-logo" height="45px"></img>
+                    <a href="{{ route('cart.index') }}">
+                        <i class="fa fa-opencart" id="open-cart">
+                            @if (Cart::instance('default')->count() > 0)
+                            <span>{{ Cart::instance('default')->count() }}</span>
+                            @endif
+                        </i>
+                    </a>
 
                 </ul>
             </div>
