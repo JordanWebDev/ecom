@@ -19,67 +19,74 @@
     <body>
         @include('partials.nav')
         <main id="app1">
-            <section>
-                <div>
 
-                    <img src="../images/iceyourbeergif.gif" alt="beer-gif" height="100%" width="100%"/>
-
-                </div>
-            </section>
-            <section>
             <section class="jumbotron text-center">
                 <div class="container">
-                    <h1 class="jumbotron-heading">FEATURED</h1>
+                    <h1 class="jumbotron-heading">Testimonials</h1>
                  </div>
             </section>
-                <div class="container">
+            <section>
+                <div class="container-fluid">
+                    <img src="http://www.molsoncoors.com/areas/molsoncoors/public/images/share/default.jpg" alt="cheers image" height="100%" width="100%"/>
+                </div>
+                <div class="container content text-center">
                     <div class="row">
-
-                        @foreach ($products as $product)
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="product-grid2">
-
-                                <div class="product-image2">
-                                    <a href="#">
-                                        <img class="pic-1" src="{{ $product->image }}">
-                                        <img class="pic-2" src="{{ $product->image }}">
-                                    </a>
-                                    <ul class="social">
-                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                                        <li>
-                                            <form id="formCart" action="{{ route('cart.store') }}" method="POST">
-
-                                                @csrf
-
-                                                <input type="hidden" name="id" value="{{ $product->id }}" />
-                                                <input type="hidden" name="name" value="{{ $product->name }}" />
-                                                <input type="hidden" name="price" value="{{ $product->price }}" />
-                                                <a id="addCart" href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-
-                                            </form>
-                                        </li>
-                                    </ul>
-
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="testimonials">
+                            	<div class="active item">
+                                    <blockquote><h4>This is some of the best beer money can buy thank you so much for delivering high quality booz! Make America Great Again!</h4></blockquote>
+                                    <div class="carousel-info card">
+                                        <img alt="stock image1" src="http://b.rgbimg.com/users/b/ba/barunpatro/300/mf6HE0w.jpg" class="pull-left">
+                                        <div class="pull-left">
+                                            <span class="testimonials-name"><h4>Donald Trump</h4></span>
+                                            <span class="testimonials-post"><h4>President of the United States of America</h4></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product-content">
-                                    <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
-                                    <span class="price">${{ $product->presentPrice() }}</span>
-                                </div>
-                                <br />
-                                <hr />
-                                <br />
                             </div>
                         </div>
-                        @endforeach
-
+                        <br />
+                        <hr />
+                        <br />
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="testimonials">
+                            	<div class="active item">
+                                    <blockquote><h4>The wine selection is absolutly stunning, perfect for celebrations and winding down after a long day at the office!</h4></blockquote>
+                                    <div class="carousel-info card">
+                                        <img alt="stock image2" src="https://c8.alamy.com/comp/JT66T9/profile-businesswoman-gesturing-professional-person-JT66T9.jpg" class="pull-left" height="300px">
+                                        <div class="pull-left">
+                                            <span class="testimonials-name"><h4>Sidney Wes</h4></span>
+                                            <span class="testimonials-post"><h4>American Actor</h4></span>
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <hr />
+                        <br />
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="testimonials">
+                            	<div class="active item">
+                                    <blockquote><h4>I'm not that big of a drinker but man was that Bourbon Delicious, I will definetley become of a regular customer just for that selection alone! best bourbon around!</h4></blockquote>
+                                    <div class="carousel-info card">
+                                        <img alt="stock image3" src="https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/HGATaVJubj6casdeu/graphicstock-profile-businesswoman-gesturing-professional-person-vector-illustration_rC5LJa-F-_thumb.jpg" class="pull-left">
+                                        <div class="pull-left">
+                                            <span class="testimonials-name"><h4>Allison Patel</h4></span>
+                                            <span class="testimonials-post"><h4>Billionaire</h4></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
             </section>
         </main>
+        <br />
+        <br />
+        <br />
         @include('partials.footer')
 
         <script src="/js/app.js"></script>
@@ -87,14 +94,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script>
-
-            $( "#addCart" ).click(function() {
-
-                $("#formCart").submit()
-
-            });
-
-        </script>
     </body>
 </html>

@@ -19,67 +19,140 @@
     <body>
         @include('partials.nav')
         <main id="app1">
-            <section>
-                <div>
 
-                    <img src="../images/iceyourbeergif.gif" alt="beer-gif" height="100%" width="100%"/>
-
-                </div>
-            </section>
-            <section>
             <section class="jumbotron text-center">
                 <div class="container">
-                    <h1 class="jumbotron-heading">FEATURED</h1>
+                    <h1 class="jumbotron-heading">What's New!</h1>
                  </div>
             </section>
+            <section class="blog-me pt-100 pb-100" id="blog">
                 <div class="container">
                     <div class="row">
-
-                        @foreach ($products as $product)
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="product-grid2">
-
-                                <div class="product-image2">
-                                    <a href="#">
-                                        <img class="pic-1" src="{{ $product->image }}">
-                                        <img class="pic-2" src="{{ $product->image }}">
-                                    </a>
-                                    <ul class="social">
-                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                                        <li>
-                                            <form id="formCart" action="{{ route('cart.store') }}" method="POST">
-
-                                                @csrf
-
-                                                <input type="hidden" name="id" value="{{ $product->id }}" />
-                                                <input type="hidden" name="name" value="{{ $product->name }}" />
-                                                <input type="hidden" name="price" value="{{ $product->price }}" />
-                                                <a id="addCart" href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-
-                                            </form>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <div class="product-content">
-                                    <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
-                                    <span class="price">${{ $product->presentPrice() }}</span>
-                                </div>
-                                <br />
-                                <hr />
-                                <br />
+                        <div class="col-xl-6 mx-auto text-center">
+                            <div class="section-title mb-100">
+                                <h4>latest blog</h4>
                             </div>
                         </div>
-                        @endforeach
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <!-- Single Blog -->
+                            <div class="single-blog">
+                                <div class="blog-img">
+                                    <img src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog1.jpg" alt="">
+                                    <div class="post-category">
+                                        <a href="#">Creative</a>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-title">
+                                        <h4><a href="#">Mobilies UX Treend</a></h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>04 June 2018</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p>
+                                    <a href="#" class="box_btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <!-- Single Blog -->
+                            <div class="single-blog">
+                                <div class="blog-img">
+                                    <img src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog2.jpg" alt="">
+                                    <div class="post-category">
+                                        <a href="#">Creative</a>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-title">
+                                        <h4><a href="#">Mobilies UX Treend</a></h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>23 June 2018</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p>
+                                    <a href="#" class="box_btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <!-- Single Blog -->
+                            <div class="single-blog">
+                                <div class="blog-img">
+                                    <img src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog3.jpg" alt="">
+                                    <div class="post-category">
+                                        <a href="#">Creative</a>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-title">
+                                        <h4><a href="#">Mobilies UX Treend</a></h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>31 July 2018</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p>
+                                    <a href="#" class="box_btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="blog1">
+                <div class="container">
+                    <div class="container-fluid">
+                        <img />
+                    </div>
+                    <div class="text-center">
+                        <h1></h1>
+                        <p>
 
+                        </p>
                     </div>
                 </div>
 
+            </section>
+            <section id="blog2">
+                <div class="container">
+                    <div class="container-fluid">
+                        <img />
+                    </div>
+                    <div class="text-center">
+                        <h1></h1>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+            <section id="blog3">
+                <div class="container">
+                    <div class="container-fluid">
+                        <img />
+                    </div>
+                    <div class="text-center">
+                        <h1></h1>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
 
             </section>
         </main>
+        <br />
+        <br />
+        <br />
         @include('partials.footer')
 
         <script src="/js/app.js"></script>
@@ -87,14 +160,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script>
-
-            $( "#addCart" ).click(function() {
-
-                $("#formCart").submit()
-
-            });
-
-        </script>
     </body>
 </html>

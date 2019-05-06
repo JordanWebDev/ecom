@@ -26,6 +26,19 @@ Route::get('empty', function(){
 
 Route::get('/about', 'PagesController@index')->name('about.index');
 
+Route::get('/blog', 'PagesController@blog')->name('blog.index');
+
+Route::get('/terms', 'PagesController@terms')->name('terms.index');
+
+Route::get('/testimonials', 'PagesController@testimonials')->name('testimonials.index');
+
+Route::get('/faq', 'PagesController@faq')->name('faq.index');
+
+Route::get('/privacy', 'PagesController@privacy')->name('privacy.index');
+
+Route::get('/contact', 'PagesController@contact')->name('contact.index');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@home')->name('home');
