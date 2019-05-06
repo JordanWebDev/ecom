@@ -95,7 +95,8 @@
             </div>
         </div>
     </div>
-
+    @include('partials.might-like')
+    
     <div class="row">
         <!-- Description -->
         <div class="col-12">

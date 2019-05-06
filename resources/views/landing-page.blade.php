@@ -23,11 +23,12 @@
                 </div>
             </section>
             <section>
-
+            <section class="jumbotron text-center">
                 <div class="container">
-
-                    <h3 class="h3 text-center">shopping Demo-2 </h3>
-
+                    <h1 class="jumbotron-heading">FEATURED</h1>
+                 </div>
+            </section>
+                <div class="container">
                     <div class="row">
 
                         @foreach ($products as $product)
