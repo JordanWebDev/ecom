@@ -36,7 +36,9 @@ Route::get('/faq', 'PagesController@faq')->name('faq.index');
 
 Route::get('/privacy', 'PagesController@privacy')->name('privacy.index');
 
-Route::get('/contact', 'PagesController@contact')->name('contact.index');
+Route::get('/contact', 'ContactController@index')->name('contact.index');
+Route::post('/contact', 'ContactController@store')->name('contact.store');
+
 
 
 Auth::routes();

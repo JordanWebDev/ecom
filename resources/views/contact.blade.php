@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ URL::asset('css/app.css')}}" />
 
-        <title>Welcome - welcome to ecommerce store buy goods</title>
+        <title>Contact - Contact us if you have any questions or concerns</title>
     </head>
     <body>
         @include('partials.nav')
@@ -22,11 +22,49 @@
 
             <section class="jumbotron text-center">
                 <div class="container">
-                    <h1 class="jumbotron-heading">Contact</h1>
+                    <h1 class="jumbotron-heading">Contact Page</h1>
                  </div>
             </section>
             <section>
-                
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            @if (Session::has('flash_message'))
+                                <div class="alert alert-success">
+                                    {{ Session::get('flash_message')}}
+                                </div>
+
+                            @endif
+                            <form method="POST" action="{{ route('contact.store')}}">
+                                @csrf
+                                <div class="form-group">
+                                    <label>Full Name:</label>
+                                    <input type="text" class="form-control" name="name"/>
+                                    @if ($errors->has('name'))
+                                        <small class="form-text invalid-feedback">{{ $errors->first('name')}}</small>
+                                    @endif                                </div>
+                                <div class="form-group">
+                                    <label>Email Address:</label>
+                                    <input type="text" class="form-control" name="email"/>
+                                    @if ($errors->has('message'))
+                                        <small class="form-text invalid-feedback">{{ $errors->first('message')}}</small>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Message:</label>
+                                    <textarea name="message" class="form-control"></textarea>
+                                </div>
+                                <button class="btn btn-primary">Submit</button>
+                            </form>
+
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+
+                </div>
             </section>
         </main>
         <br />
