@@ -13892,25 +13892,6 @@ footer {
   opacity: 1;
 }
 
-.product-grid2 .add-to-cart {
-  color: #fff;
-  background-color: #404040;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-  padding: 10px 0;
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -100%;
-  transition: all 0.3s;
-}
-
-.product-grid2 .add-to-cart:hover {
-  background-color: #3498db;
-  text-decoration: none;
-}
-
 .product-grid2:hover .add-to-cart {
   bottom: 0;
 }

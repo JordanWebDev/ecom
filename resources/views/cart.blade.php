@@ -95,15 +95,15 @@
                                     <td></td>
                                     <td></td>
                                     <td>Sub-Total</td>
-                                    <td class="text-right">255,90 €</td>
+                                    <td class="text-right">{{ presentPrice(Cart::subtotal()) }}</td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td>Shipping</td>
-                                    <td class="text-right">6,90 €</td>
+                                    <td>Tax (5%)</td>
+                                    <td class="text-right">{{ presentPrice(Cart::tax()) }}</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -111,7 +111,7 @@
                                     <td></td>
                                     <td></td>
                                     <td><strong>Total</strong></td>
-                                    <td class="text-right"><strong>346,90 €</strong></td>
+                                    <td class="text-right"><strong>{{ presentPrice(Cart::total()) }}</strong></td>
                                 </tr>
                             </tbody>
                         </table>

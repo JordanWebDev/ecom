@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: black;">
         <div class="container">
 
-            <img id="logo-nav" src="../images/navlogo.jpg" alt="mug-logo" height="45px"></img>
+            <a href="{{ route('landing-page') }}"><img id="logo-nav" src="../images/navlogo.jpg" alt="mug-logo" height="45px"></img></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>

@@ -7,6 +7,10 @@
         <meta name="author" content="">
         <meta name="keywords" content="" />
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <script src="{!! asset('js/app.js') !!}"></script>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ URL::asset('css/app.css')}}" />
 
@@ -44,9 +48,20 @@
                                     <ul class="social">
                                         <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                         <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li>
+                                            <form id="formCart" action="{{ route('cart.store') }}" method="POST">
+
+                                                @csrf
+
+                                                <input type="hidden" name="id" value="{{ $product->id }}" />
+                                                <input type="hidden" name="name" value="{{ $product->name }}" />
+                                                <input type="hidden" name="price" value="{{ $product->price }}" />
+                                                <a id="addCart" href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+
+                                            </form>
+                                        </li>
                                     </ul>
-                                    <a class="add-to-cart" href="">Add to cart</a>
+                
                                 </div>
                                 <div class="product-content">
                                     <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
@@ -58,6 +73,7 @@
                             </div>
                         </div>
                         @endforeach
+
                     </div>
                 </div>
 
@@ -69,5 +85,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+        <script>
+
+            $( "#addCart" ).click(function() {
+
+                $("#formCart").submit()
+
+            });
+
+        </script>
     </body>
 </html>
