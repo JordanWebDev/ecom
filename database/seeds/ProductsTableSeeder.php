@@ -26,7 +26,7 @@ class ProductsTableSeeder extends Seeder
                                 The light-bodied beer features a fresh, clean and subtle hop aroma,
                                 delicate malt sweetness and a crisp finish that delivers the ultimate
                                 refreshment. Brewed in the U.S.A. 4.2% alcohol by volume.',
-        ]);
+        ])->categories()->attach(1);
 
         Product::create([
             'name' => 'Corona Extra',
@@ -45,7 +45,7 @@ class ProductsTableSeeder extends Seeder
                                 try adding a fresh wedge of lime to bring out the citrus flavors.
                                 We recommend enjoying this simple brew from the bottle (or can),
                                 and if possible on a beach somewhere.',
-        ]);
+        ])->categories()->attach(1);
 
         Product::create([
             'name' => 'Stella Artois',
@@ -60,7 +60,7 @@ class ProductsTableSeeder extends Seeder
                                 and aroma. Brewed in Belgium. Pairs well with steak, mussels, and chocolate desserts.
                                 5% alcohol by volume.
 ',
-        ]);
+        ])->categories()->attach(1);
         //WINE
         Product::create([
             'name' => 'Apothic Red',
@@ -74,7 +74,7 @@ class ProductsTableSeeder extends Seeder
                                 mouthfeel. They are complemented by Cabernet Sauvignon that contributes a firm structure
                                 and bold flavors. All of the varietals combine to offer layers of dark fruit that are enhanced
                                 by soft vanilla and mocha tones leading to a soft, lasting finish.',
-        ]);
+        ])->categories()->attach(2);
 
         Product::create([
             'name' => 'Barefoot Pinot Grigio',
@@ -85,7 +85,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'Tart green apple flavors get down with a white peach undertone.
                                 Floral blossoms and citrus aromas do the tango. Barefoot’s Pinot
                                 Grigio is light-bodied with a bright finish.',
-        ]);
+        ])->categories()->attach(2);
 
         Product::create([
             'name' => 'Veuve Clicquot Brut Yellow Label',
@@ -111,7 +111,7 @@ class ProductsTableSeeder extends Seeder
 
                                 This product may be available in a gift box depending upon retailer availability. Please contact
                                 customer support with any questions. ',
-        ]);
+        ])->categories()->attach(2);
         //LIQUOR
         Product::create([
             'name' => 'Bulleit Bourbon',
@@ -131,7 +131,7 @@ class ProductsTableSeeder extends Seeder
                                 content gives it a bold, spicy character with a distinctively smooth, clean finish.
                                 Kentucky limestone-filtered water provides a foundation for the bourbons character,
                                 while charred American oak barrels lend a smoky backbone. Please drink responsibly.',
-        ]);
+        ])->categories()->attach(3);
 
         Product::create([
             'name' => 'Smirnoff No. 21 Vodka',
@@ -151,7 +151,7 @@ class ProductsTableSeeder extends Seeder
                                 to our award-winning quality and smooth liquid. We pride ourselves on bringing our famous
                                 beverage to connoisseurs and newcomers alike, assuring the consistently great taste and
                                 quality expected from our traditionally distilled vodka. Please drink responsibly.',
-        ]);
+        ])->categories()->attach(3);
 
         Product::create([
             'name' => 'Don Julio Blanco',
@@ -163,7 +163,7 @@ class ProductsTableSeeder extends Seeder
                                 Don Julio Blanco is tequila in its truest form. Double-distilled agave to achieve a clean and
                                 dry finish. Blanco is the base of all Don Julio aged tequilas. Gluten-free & Kosher.
                                 Sip it neat or in a Don Julio Luxury margarita.',
-        ]);
+        ])->categories()->attach(3);
         //SODA
         Product::create([
             'name' => 'Diet Coke',
@@ -175,7 +175,7 @@ class ProductsTableSeeder extends Seeder
                                 that gives you the refreshment you want throughout the day. It’s the
                                 original sparkling beverage for those who want great flavor without
                                 the calories - a drink for those with great taste.',
-        ]);
+        ])->categories()->attach(4);
 
         Product::create([
             'name' => 'Coca Cola',
@@ -184,7 +184,7 @@ class ProductsTableSeeder extends Seeder
             'details' => 'Region: United States',
             'price' => '229',
             'description' => 'Bring home the refreshing taste of Coca-Cola. Serve ice cold for maximum refreshment.',
-        ]);
+        ])->categories()->attach(4);
 
         Product::create([
             'name' => 'Canada Dry Ginger Ale',
@@ -197,6 +197,6 @@ class ProductsTableSeeder extends Seeder
                                 real ginger and is caffeine free. Enhance your favorite cocktails with a sparkling splash
                                 of Canada Dry or enjoy by itself for crisp, clean refreshment. Creating quality beverages
                                 and mixers since 1904, enjoy the best in refreshment with Canada Dry.',
-        ]);
+        ])->categories()->attach(4);
     }
 }
