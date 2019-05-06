@@ -49321,7 +49321,10 @@ Vue.component('products-component', __webpack_require__(/*! ./components/Product
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-// new Vue({
+
+var app = new Vue({
+  el: '#app1'
+}); // new Vue({
 //
 // })
 //  document.getElementById('#addCart').addEventListener('click', function(){

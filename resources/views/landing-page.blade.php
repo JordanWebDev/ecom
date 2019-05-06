@@ -18,7 +18,7 @@
     </head>
     <body>
         @include('partials.nav')
-        <main>
+        <main id="app1">
             <section>
                 <div>
 
@@ -61,7 +61,7 @@
                                             </form>
                                         </li>
                                     </ul>
-                
+
                                 </div>
                                 <div class="product-content">
                                     <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
@@ -76,7 +76,12 @@
 
                     </div>
                 </div>
+                test
+                <div >
 
+                    <example-component></example-component>
+
+                </div>
             </section>
         </main>
         @include('partials.footer')

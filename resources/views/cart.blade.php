@@ -9,7 +9,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active"><a href="/cart">Cart</a></li>
+                        <li class="breadcrumb-item active"><a href="{{ route('cart.index') }}">Cart</a></li>
                     </ol>
                 </nav>
             </div>
@@ -124,10 +124,10 @@
             <div class="col mb-2">
                 <div class="row">
                     <div class="col-sm-12  col-md-6">
-                        <a href="/shop" class="btn btn-block btn-light" role="button">Continue Shopping</a>
+                        <a href="{{ route('shop.index') }}" class="btn btn-block btn-light" role="button">Continue Shopping</a>
                     </div>
                     <div class="col-sm-12 col-md-6 text-right">
-                        <a href="/checkout" class="btn btn-lg btn-block btn-success text-uppercase" role="button">Checkout</a>
+                        <a href="{{ route('checkout.index') }}" class="btn btn-lg btn-block btn-success text-uppercase" role="button">Checkout</a>
                     </div>
                 </div>
             </div>

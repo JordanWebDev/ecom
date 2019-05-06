@@ -30,6 +30,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@home')->name('home');
 
-Route::view('/checkout', 'HomeController@checkout');
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 
-Route::view('/thankyou', 'HomeController@thankyou');
+Route::get('/thankyou', 'CheckoutController@payment')->name('payment.index');
