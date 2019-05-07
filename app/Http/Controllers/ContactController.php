@@ -46,9 +46,9 @@ class ContactController extends Controller
         ], function($mail) use($request){
             $mail->from($request->email, $request->name);
 
-            $mail->('dev.jordn@gmail.com')->subject('Contact Message From Ecommerce');
+            $mail->to('dev.jordn@gmail.com')->subject('Contact Message From Ecommerce');
         });
-        return redirect()->back()->with('flash_message', 'Thank you for contacting us! We will respond within 24 hours!')
+        return redirect()->back()->with('flash_message', 'Thank you for contacting us! We will respond within 24 hours!');
     }
 
     /**
