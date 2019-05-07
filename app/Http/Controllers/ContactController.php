@@ -35,19 +35,25 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
+        //validate form fields
         $this->validate($request, [
             'name' => 'required',
             'email'=> 'required|email',
             'message' => 'required',
         ]);
-
+        //sending message using contact-message.blade.php inside emails which basically renders message
         Mail::send('emails.contact-message', [
+            //passing message in
             'msg' => $request->message
+
         ], function($mail) use($request){
+            //using this function to set from and to and subject
             $mail->from($request->email, $request->name);
 
             $mail->to('dev.jordn@gmail.com')->subject('Contact Message From Ecommerce');
+
         });
+
         return redirect()->back()->with('flash_message', 'Thank you for contacting us! We will respond within 24 hours!');
     }
 

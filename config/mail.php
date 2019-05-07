@@ -9,10 +9,10 @@ return [
         'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
 
-        'port' => env('MAIL_PORT', 2525),
+        'port' => env('MAIL_PORT', 587),
 
 
-        'from' => ['address' => 'dev.jordn@gmail.com', 'name' => 'Web Developer Jordan'],
+        'from' => ['address' => '', 'name' => ''],
 
 
         'encryption' => 'tls',
@@ -29,12 +29,19 @@ return [
 
 
         'pretend' => false,
-'markdown' => [
-    'theme' => 'default',
+        'markdown' => [
+            'theme' => 'default',
 
-    'paths' => [
-        resource_path('views/vendor/mail'),
-    ],
-],
+            'paths' => [
+                resource_path('views/vendor/mail'),
+            ],
+        ],
+        'stream' => [
+            'ssl' => [
+                'allow_self_signed' => true,
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+            ],
+        ],
 
-];
+    ];

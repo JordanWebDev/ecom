@@ -30,9 +30,13 @@
                     <h1>Contact Us</h1>
                     <div class="row">
                         <div class="col-md-6">
+                            {{-- checking if session has flash_message --}}
                             @if (Session::has('flash_message'))
+                                {{-- if it does display this in this div --}}
                                 <div class="alert alert-success">
+
                                     {{ Session::get('flash_message')}}
+
                                 </div>
 
                             @endif
