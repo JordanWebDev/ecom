@@ -30,32 +30,24 @@ Vue.component('products-component', require('./components/ProductsComponent.vue'
  */
 
  const app = new Vue({
-     el: '#app1',
+    el: '#app1',
+    data() {
+        return {
+            products: []
+        }
+    },
+    methods: {
+        productsApi() {
+
+            axios.get("/api/products")
+                .then(function(response) {
+
+                    this.products = response.data.data[(response.data.data)];
+                    console.log(response.data.data);
+            });
+        },
+    },
+    mounted() {
+        this.productsApi();
+    }
  });
-// new Vue({
-//
-// })
-//  document.getElementById('#addCart').addEventListener('click', function(){
-//      fetch('http://ecommerce.local/cart')
-//          .then(
-//              function(response){
-//                  response.json().then(function(data){
-//
-//                      // response.json() gives us the data variable
-//                      // as a JavaScript object
-//
-//                      var addToCart = $( "#addCart" );
-//
-//                          // $("form").submit(function( event ){
-//
-//                                  $("#formCart").submit()
-//
-//                             // });
-//
-//
-//                      }
-//
-//                  });
-//              }
-//          );
-//  })

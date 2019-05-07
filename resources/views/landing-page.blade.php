@@ -18,7 +18,7 @@
     </head>
     <body>
         @include('partials.nav')
-        <main id="app1">
+        <main>
             <section>
                 <div>
 
@@ -26,57 +26,19 @@
 
                 </div>
             </section>
-            <section>
             <section class="jumbotron text-center">
                 <div class="container">
                     <h1 class="jumbotron-heading">FEATURED</h1>
                  </div>
             </section>
+            <section id="app1">
                 <div class="container">
                     <div class="row">
-
-                        @foreach ($products as $product)
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="product-grid2">
-
-                                <div class="product-image2">
-                                    <a href="#">
-                                        <img class="pic-1" src="{{ $product->image }}">
-                                        <img class="pic-2" src="{{ $product->image }}">
-                                    </a>
-                                    <ul class="social">
-                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                                        <li>
-                                            <form id="formCart" action="{{ route('cart.store') }}" method="POST">
-
-                                                @csrf
-
-                                                <input type="hidden" name="id" value="{{ $product->id }}" />
-                                                <input type="hidden" name="name" value="{{ $product->name }}" />
-                                                <input type="hidden" name="price" value="{{ $product->price }}" />
-                                                <a id="addCart" href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-
-                                            </form>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <div class="product-content">
-                                    <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
-                                    <span class="price">${{ $product->presentPrice() }}</span>
-                                </div>
-                                <br />
-                                <hr />
-                                <br />
-                            </div>
-                        </div>
-                        @endforeach
+                        <example-component></example-component>
+                        <products-component v-for="product in products"></products-component>
 
                     </div>
                 </div>
-
 
             </section>
         </main>
