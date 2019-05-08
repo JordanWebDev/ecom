@@ -42,7 +42,7 @@ Vue.component('products-component', require('./components/ProductsComponent.vue'
             axios.get("/api/products")
                 .then(function(response) {
 
-                    this.products = response.data.data[(response.data.data)];
+                    this.products = response.data.data[(response.data.data).length];
                     console.log(response.data.data);
             });
         },
