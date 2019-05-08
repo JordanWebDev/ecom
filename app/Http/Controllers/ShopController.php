@@ -31,11 +31,17 @@ class ShopController extends Controller
             $categoryName = 'Featured';
         }
         if (request()->sort == 'low_high') {
+            // if sort = low to high order price of products low to high
             $products = $products->orderBy('price')->paginate($pagination);
+
         }elseif (request()->sort == 'high_low') {
+            // if sort = low to high order price of products high to low
             $products = $products->orderBy('price', 'desc')->paginate($pagination);
+
         }else{
+            // show normal pagination
             $products = $products->paginate($pagination);
+
         }
 
         return view('shop')->with([

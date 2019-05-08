@@ -4,7 +4,7 @@
     <div class="product-grid2">
 
         <div class="product-image2">
-            <a href="#">
+            <a href="{{ route('shop.show', $product->slug) }}">
                 <img class="pic-1" src="{{ $product->image }}">
                 <img class="pic-2" src="{{ $product->image }}">
             </a>

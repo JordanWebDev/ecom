@@ -31,23 +31,16 @@ Vue.component('products-component', require('./components/ProductsComponent.vue'
 
  const app = new Vue({
     el: '#app1',
-    data() {
-        return {
-            products: []
+
+});
+
+const subscribe = new Vue({
+    el: '#subscribe',
+
+    methods: {
+        subscribed() {
+            alert('you are now subscribed');
+
         }
     },
-    methods: {
-        productsApi() {
-
-            axios.get("/api/products")
-                .then(function(response) {
-
-                    this.products = response.data.data[(response.data.data).length];
-                    console.log(response.data.data);
-            });
-        },
-    },
-    mounted() {
-        this.productsApi();
-    }
  });

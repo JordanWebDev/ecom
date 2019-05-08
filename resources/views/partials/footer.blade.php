@@ -42,10 +42,6 @@
 
                     </div>
 
-                    <div class="footer-awarad">
-                        <img src="images/icon/best.png" alt="">
-                        <p>Best Liquor Company In 2019</p>
-                    </div>
                 </div>
 
                 <div class="col-md-12 col-lg-8">
@@ -100,28 +96,28 @@
                                         <a href="/shop">Store</a>
                                     </li>
                                     <li>
-                                        <a href="#">Our Team</a>
+                                        <a href="/ourteam">Our Team</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#">Contact us</a>
+                                        <a href="/contact">Contact us</a>
                                     </li>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a href="/nlog">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="#">Testimonials</a>
+                                        <a href="/testimonials">Testimonials</a>
                                     </li>
                                     <li>
-                                        <a href="#">Faq</a>
+                                        <a href="/faq">Faq</a>
                                     </li>
                                 </ul>
                             </div>
 
                         </div>
 
-                        <div class="col-md-12 col-lg-6">
+                        <div class="col-md-12 col-lg-6" id="subscribe">
                             <div class="footer-widget">
                                 <div class="section-heading">
                                     <h3>Subscribe</h3>
@@ -130,11 +126,11 @@
                                 <p>
                                     Don’t miss to subscribe to our new feeds, kindly fill the form below.
                                 </p>
-                                <form action="#">
+                                <form action="">
                                     <div class="form-row">
                                         <div class="col dk-footer-form">
                                             <input type="email" class="form-control" placeholder="Email Address">
-                                            <button type="submit">
+                                            <button type="submit" @click="subscribed">
                                                 <i class="fa fa-send"></i>
                                             </button>
                                         </div>
