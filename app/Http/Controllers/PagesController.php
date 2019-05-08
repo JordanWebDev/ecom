@@ -27,4 +27,7 @@ class PagesController extends Controller
     public function testimonials(){
         return view('testimonials');
     }
+    public function marketing(){
+        return view('marketing');
+    }
 }

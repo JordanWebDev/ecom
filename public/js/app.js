@@ -1843,7 +1843,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -37219,7 +37218,11 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "product-content" }, [
               _c("h3", { staticClass: "title" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(item.name))])
+                _c(
+                  "a",
+                  { attrs: { href: "route('shop.show', $product->slug)" } },
+                  [_vm._v(_vm._s(item.name))]
+                )
               ]),
               _vm._v(" "),
               _c("span", { staticClass: "price" }, [
@@ -37245,7 +37248,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "product-image2" }, [
-      _c("a", { attrs: { href: "#" } }, [
+      _c("a", { attrs: { href: "route('shop.show', $product->slug)" } }, [
         _c("img", { staticClass: "pic-1", attrs: { src: "item.image" } }),
         _vm._v(" "),
         _c("img", { staticClass: "pic-2", attrs: { src: "item.image" } })
@@ -37253,15 +37256,16 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("ul", { staticClass: "social" }, [
         _c("li", [
-          _c("a", { attrs: { href: "#", "data-tip": "Quick View" } }, [
-            _c("i", { staticClass: "fa fa-eye" })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "#", "data-tip": "Add to Wishlist" } }, [
-            _c("i", { staticClass: "fa fa-shopping-bag" })
-          ])
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "route('shop.show', $product->slug)",
+                "data-tip": "Quick View"
+              }
+            },
+            [_c("i", { staticClass: "fa fa-eye" })]
+          )
         ]),
         _vm._v(" "),
         _c("li", [
@@ -37293,7 +37297,7 @@ var staticRenderFns = [
               _c(
                 "a",
                 {
-                  attrs: { id: "addCart", href: "#", "data-tip": "Add to Cart" }
+                  attrs: { id: "addCart", href: "", "data-tip": "Add to Cart" }
                 },
                 [_c("i", { staticClass: "fa fa-shopping-cart" })]
               )

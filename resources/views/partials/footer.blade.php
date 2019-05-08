@@ -164,28 +164,19 @@
                                     <a href="/">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">Terms</a>
+                                    <a href="/terms">Terms</a>
                                 </li>
                                 <li>
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="/privacy">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact</a>
+                                    <a href="/contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-        </div>
-
-        <div id="back-to-top" class="back-to-top">
-            <button class="btn btn-dark" title="Back to Top" style="display: block;">
-                <i class="fa fa-angle-up"></i>
-            </button>
         </div>
 
 </footer>

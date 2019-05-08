@@ -36,6 +36,8 @@ Route::get('/faq', 'PagesController@faq')->name('faq.index');
 
 Route::get('/privacy', 'PagesController@privacy')->name('privacy.index');
 
+Route::get('/marketing', 'PagesController@marketing')->name('martketing.index');
+
 Route::get('/contact', 'ContactController@index')->name('contact.index');
 Route::post('/contact', 'ContactController@store')->name('contact.store');
 

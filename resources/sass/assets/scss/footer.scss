@@ -353,3 +353,30 @@
     background: #FA6742;
     border-color: #FA6742;
 }
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+    .col-md-6{
+        display: none;
+        .contact-icon{
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-md-6{
+        display: none;
+        .contact-icon{
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .col-md-6{
+        display: none;
+        .contact-icon{
+            display: none;
+        }
+    }
+}

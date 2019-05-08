@@ -5,13 +5,12 @@
                 <div class="product-grid2">
 
                     <div class="product-image2">
-                        <a href="#">
+                        <a href="route('shop.show', $product->slug)">
                             <img class="pic-1" src="item.image">
                             <img class="pic-2" src="item.image">
                         </a>
                         <ul class="social">
-                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="route('shop.show', $product->slug)" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                             <li>
                                 <form id="formCart" action="route('cart.store')" method="POST">
 
@@ -20,7 +19,7 @@
                                     <input type="hidden" name="id" value="item.id" />
                                     <input type="hidden" name="name" value="item.name" />
                                     <input type="hidden" name="price" value="item.price" />
-                                    <a id="addCart" href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                    <a id="addCart" href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
 
                                 </form>
                             </li>
@@ -28,7 +27,7 @@
 
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">{{ item.name }}</a></h3>
+                        <h3 class="title"><a href="route('shop.show', $product->slug)">{{ item.name }}</a></h3>
                         <span class="price">${{ item.price }}</span>
                     </div>
                     <br />

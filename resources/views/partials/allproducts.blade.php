@@ -25,7 +25,7 @@
             </ul>
         </div>
         <div class="product-content">
-            <h3 class="title"><a href="#">{{ $product->name }}</a></h3>
+            <h3 class="title"><a href="{{ route('shop.show', $product->slug) }}">{{ $product->name }}</a></h3>
             <span class="price">${{ $product->presentPrice() }}</span>
         </div>
     </div>

@@ -1,0 +1,73 @@
+.voiceimg{ height: 225;}
+.coffeeImg { height:180;}
+.container-content {
+    padding: 50px 0;
+
+    .content-main{
+        display: block;
+        border: 5px solid darkblue;
+        padding: 30px 8%;
+        padding-top: 80px;
+        position: relative;
+        overflow: hidden;
+        color: black;
+    }
+}
+.background-text {
+    padding-top: 14%;
+    padding-right: 50%;
+    color: White;
+
+
+    #titlecard {font-size: 70px;}
+    #motto {font-size: 40px;}
+
+}
+#learnmore-button {
+
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    vertical-align: center;
+    position: absolute;
+    transition: .5s ease;
+    top:80%;
+    left: 17%;
+    width: 25%;
+    border-radius: 100px;
+    border-color: white;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 20px;
+
+    &:hover {
+        background-color: #1da1f2;
+    }
+}
+.marketing-background{
+    background-image: url('http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201801/575069021.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+    #learnmore-button{
+        padding:15px;
+        padding-left: 15%;
+        padding-right: 20%;
+
+    }
+}
+@media only screen and (max-width: 576px) {
+
+}
